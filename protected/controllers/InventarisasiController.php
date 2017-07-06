@@ -11,18 +11,7 @@ class InventarisasiController extends Controller
 	/**
 	 * @return array action filters
 	 */
-        public function behavior()
-    {
-            return array(
-                    array(
-                            'class' => 'ext.autonumber.MdmAutonumberBehavior',
-                            'attribute' => 'noInventaris', // required
-                            'group' => 'kodeBarang', // required, unique
-                            'value' => 'SA-'.date('Y-m-d').'?' , // format auto number. '?' will be replaced with generated number
-                            'digit' => 4 // optional, default to null. 
-                    ),
-            );
-    }
+       
 	public function filters()
 	{
 		return array(

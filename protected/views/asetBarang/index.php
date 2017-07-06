@@ -3,7 +3,7 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Aset Barangs',
+	'Aset Barang',
 );
 
 $this->menu=array(
