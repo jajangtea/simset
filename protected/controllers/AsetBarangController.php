@@ -28,7 +28,7 @@ class AsetBarangController extends Controller {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view','lap','export'),
+                'actions' => array('index', 'view','laporan','export'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -325,7 +325,7 @@ class AsetBarangController extends Controller {
         spl_autoload_register(array('YiiBase', 'autoload'));
     }
     
-    public function actionExport() {
+    public function actionLaporan() {
         $model = new AsetBarang;
         $model->unsetAttributes();  // clear any default values
         if (isset($_POST['AsetBarang']))

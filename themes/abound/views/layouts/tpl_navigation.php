@@ -29,7 +29,16 @@
                             array('label'=>'<i class="fa fa-cube"></i> Penanggung Jawab', 'url'=>array('/pegawai')),
                             
                         ),'visible'=>Yii::app()->user->getLevel()<=1),
+                        
                         array('label'=>'<i class="fa fa-signal"></i> Inventarisasi', 'url'=>array('/inventarisasi'), 'visible'=>Yii::app()->user->getLevel()<=1),
+                        array('label'=>'<i class="fa fa-cube"></i> Laporan <span class="caret"></span>', 'url'=>'#','itemOptions'=>array('class'=>'dropdown','tabindex'=>"-1"),'linkOptions'=>array('class'=>'dropdown-toggle','data-toggle'=>"dropdown"), 
+                        'items'=>array(
+                            array('label'=>'<i class="fa fa-cube"></i> Ruangan', 'url'=>array('/ruangan/laporan')),
+                            array('label'=>'<i class="fa fa-cube"></i> Aset Barang', 'url'=>array('/asetBarang/laporan')),
+                            array('label'=>'<i class="fa fa-cube"></i> Jenis Aset', 'url'=>array('/jenis/laporan')),
+                            array('label'=>'<i class="fa fa-cube"></i> Inventaris', 'url'=>array('/inventarisasi/laporan')),
+                            
+                        ),'visible'=>Yii::app()->user->getLevel()<=1),
                         array('label'=>'<i class="fa fa-user"></i> Account', 'url'=>array('/user'),'visible'=>Yii::app()->user->getLevel()<=1),
                         array('label'=>'<i class="fa fa-user"></i> Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                         array('label'=>'<i class="fa fa-share"></i> Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
