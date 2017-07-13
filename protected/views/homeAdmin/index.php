@@ -336,13 +336,13 @@ $gridDataProvider = new CArrayDataProvider(array(
                 <span class="summary-number"><?= AsetBarang::model()->getTotals($model->search()->getKeys()) ?></span>
                 <span class="summary-title">Aset Barang</span>
             </li>
-            <li>
+<!--            <li>
             	<span class="summary-icon">
                 	<img src="<?php echo $baseUrl ;?>/img/group.png" width="36" height="36" alt="Active Members">
                 </span>
-                <span class="summary-number"><?=Inventarisasi::model()->getTotals($modelInventaris->search()->getKeys()) ?></span>
+                <span class="summary-number"><?php //Inventarisasi::model()->getTotals($modelInventaris->search()->getKeys()) ?></span>
                 <span class="summary-title">Data Inventaris</span>
-            </li>
+            </li>-->
             <li>
             	<span class="summary-icon">
                 	<img src="<?php echo $baseUrl ;?>/img/folder_page.png" width="36" height="36" alt="Recent Conversions">

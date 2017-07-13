@@ -118,7 +118,6 @@ $baseUrl = Yii::app()->theme->baseUrl;
                         <img src="<?php echo $baseUrl; ?>/img/group.png" width="36" height="36" alt="Active Members">
                     </span>
                     <span class="summary-number"><a href="http://180.242.93.57/~digilib/" target="_new">Digilib</a></span>
-                    <span class="summary-title"> Active Members</span>
                 </li>
                 <li>
                     <span class="summary-icon">

@@ -24,7 +24,9 @@
                         array('label'=>'<i class="fa fa-cube"></i> Master Data <span class="caret"></span>', 'url'=>'#','itemOptions'=>array('class'=>'dropdown','tabindex'=>"-1"),'linkOptions'=>array('class'=>'dropdown-toggle','data-toggle'=>"dropdown"), 
                         'items'=>array(
                             array('label'=>'<i class="fa fa-cube"></i> Ruangan', 'url'=>array('/ruangan')),
-                            array('label'=>'<i class="fa fa-cube"></i> Aset Barang', 'url'=>array('/asetBarang')),
+                            array('label'=>'<i class="fa fa-cube"></i> Aset Barang', 'url'=>array('/asetBarang/admin')),
+                            array('label'=>'<i class="fa fa-cube"></i> Aset Gedung', 'url'=>array('/asetGedung/admin')),
+                            array('label'=>'<i class="fa fa-cube"></i> Aset Tanah', 'url'=>array('/asetTanah/admin')),
                             array('label'=>'<i class="fa fa-cube"></i> Jenis Aset', 'url'=>array('/jenis')),
                             array('label'=>'<i class="fa fa-cube"></i> Penanggung Jawab', 'url'=>array('/pegawai')),
                             
@@ -35,7 +37,6 @@
                         'items'=>array(
                             array('label'=>'<i class="fa fa-cube"></i> Ruangan', 'url'=>array('/ruangan/laporan')),
                             array('label'=>'<i class="fa fa-cube"></i> Aset Barang', 'url'=>array('/asetBarang/laporan')),
-                            array('label'=>'<i class="fa fa-cube"></i> Jenis Aset', 'url'=>array('/jenis/laporan')),
                             array('label'=>'<i class="fa fa-cube"></i> Inventaris', 'url'=>array('/inventarisasi/laporan')),
                             
                         ),'visible'=>Yii::app()->user->getLevel()<=1),
